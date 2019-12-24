@@ -1,110 +1,72 @@
-<html>
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Welcome to Paiheng Xu's Homepage</title>
+---
+layout: page
+title: My website
+subtitle: This is where I will tell my friends way too much about me
+use-site-title: true
+---
 
-<body>
+<div class="posts-list">
+  {% for post in paginator.posts %}
+  <article class="post-preview">
+    <a href="{{ post.url | relative_url }}">
+	  <h2 class="post-title">{{ post.title }}</h2>
 
-<font face="Times New Roman">
-    <center>
-        <table border="0" cellpadding="0" cellspacing="0" width="800">
-            <tbody>
-            <tr>
-                <td colspan="4"></td>
-            </tr>
-            <tr>
-                <td valign="bottom">
+	  {% if post.subtitle %}
+	  <h3 class="post-subtitle">
+	    {{ post.subtitle }}
+	  </h3>
+	  {% endif %}
+    </a>
 
-                </td>
-                <td width="30">
+    <p class="post-meta">
+      Posted on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
 
-                </td>
-                <!--			<td width="220">-->
-                <!--				<img src="./img/paiheng.jpg" width="148">-->
-                <!--			</td>-->
+    <div class="post-entry-container">
+      {% if post.image %}
+      <div class="post-image">
+        <a href="{{ post.url | relative_url }}">
+          <img src="{{ post.image | relative_url }}">
+        </a>
+      </div>
+      {% endif %}
+      <div class="post-entry">
+        {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
+        {% assign excerpt_word_count = post.excerpt | number_of_words %}
+        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
+          <a href="{{ post.url | relative_url }}" class="post-read-more">[Read&nbsp;More]</a>
+        {% endif %}
+      </div>
+    </div>
 
-                <td width="500">
-                    <font face="Arial"> <b><font size="5">Paiheng Xu</font></b>
-                        <p>
-                        </p></font>
-                    <p><font face="Arial">
+    {% if post.tags.size > 0 %}
+    <div class="blog-tags">
+      Tags:
+      {% if site.link-tags %}
+      {% for tag in post.tags %}
+      <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+      {% endfor %}
+      {% else %}
+        {{ post.tags | join: ", " }}
+      {% endif %}
+    </div>
+    {% endif %}
 
-                        Email: <font size="2"><b>paiheng at jhu.edu</b></font></font>
+   </article>
+  {% endfor %}
+</div>
 
-                    </p></td>
-            </tr>
-            <tr>
-                <td width="50">
-                </td>
-                <td colspan="3" align="left" height="20" valign="top" width="750">
-                    <hr>
-                </td>
-            </tr>
-
-            <tr>
-                <td width="50">
-                </td>
-                <td colspan="3" align="left" height="20" valign="top" width="750">
-
-                    I am a <a href="https://www.cs.jhu.edu/">computer science</a> master student at <a
-                        href="https://www.jhu.edu/">Johns Hopkins University</a>, where I work with <a
-                        href="http://www.cs.jhu.edu/~mdredze/">Mark Dredze</a> at <a href="https://www.clsp.jhu.edu/">Center
-                    for Language and Speech Processing</a>.
-                    Previously, I have worked with <a
-                        href="https://scholar.google.com/citations?user=8voeILsAAAAJ&hl=zh-CN&oi=ao">Yong Deng</a> on
-                    Complex Network, and <a
-                        href="https://scholar.google.com/citations?user=MXgWgmEAAAAJ&hl=zh-CN&oi=ao">Tao Zhou</a> on
-                    Human Mobility.
-
-                    <p>I am interested in Natural Language Processing and Network Science, especially combining them to
-                        understand the dynamics of human behaviours in social media and real world.</p>
-
-                    <h3>Publications</h3>
-                    <ul>
-                        <li> Zach Wood-Doughty*, <B>Paiheng Xu</B>*, Xiao Liu, Mark Dredze, Using Noisy Self-Reports to Predict Twitter User Demographics. [submitted][* equal contribution] [<a href="https://openreview.net/forum?id=rJlZkEiy2S&noteId=rJlZkEiy2S">paper</a>, <a href="https://github.com/paihengxu/">code</a>]</li>
-                        <li> <B>Paiheng Xu</B>, Likang Yin, Zhongtao Yue, Tao Zhou, On Predictability of Time Series. <I>Physica A: Statistical Mechanics and its Applications</I> 523, 345-351 (2019). [<a href="https://www.sciencedirect.com/science/article/pii/S0378437119301591">paper</a>, <a href="https://github.com/paihengxu/predictability-of-human-mobility">code</a>]</li>
-                        <li> <b>Paiheng Xu</b>, Rong Zhang, Yong Deng, A Novel Visibility Graph Transformation of Time Series into Weighted Networks. <i>Chaos, Solitons & Fractals</i> 117, 201-208 (2018) [<a href="https://www.sciencedirect.com/science/article/pii/S0960077918307276">paper</a>]</li>
-                        <li> <b>Paiheng Xu</b>, Rong Zhang, Yong Deng. A Novel Weight Determination Method for Time Series Data Aggregation. <i>Physica A: Statistical Mechanics and its Application</i> 482, 42-55 (2018). [<a href="https://www.sciencedirect.com/science/article/pii/S0378437117303308">paper</a>, <a href="https://github.com/paihengxu/vga-iowa">code</a>]</li>
-                    </ul>
-
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-
-
-
-                    <!-- hitwebcounter Code START -->
-                    <hr>
-                    <i>Last Update: August 2019. Visitor number: <a href="http://www.hitwebcounter.com" target="_blank">
-                        <img src="http://hitwebcounter.com/counter/counter.php?page=7127162&style=0006&nbdigits=5&type=page&initCount=0"
-                             title="URL Counter" Alt="URL Counter" border="0">
-                    </a> <br/>
-                    </i>
-
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </center>
-</font>
-
-
-</body>
-</html>
+{% if paginator.total_pages > 1 %}
+<ul class="pager main-pager">
+  {% if paginator.previous_page %}
+  <li class="previous">
+    <a href="{{ paginator.previous_page_path | relative_url }}">&larr; Newer Posts</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ paginator.next_page_path | relative_url }}">Older Posts &rarr;</a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}
