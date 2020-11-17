@@ -32,7 +32,6 @@ navbar-links:
 # Remove this parameter if you don't want an image in the navbar
 # avatar: "/img/avatar-icon.png"
 avatar: "/img/paiheng.jpg"
-# TODO: add/upload my pic
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -75,7 +74,7 @@ social-network-links:
   email: "xupaiheng@gmail.com"
 #   facebook: deanattali
   github: paihengxu
-#   twitter: daattali
+  twitter: Paiheng1
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
