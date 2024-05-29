@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2023-11-15
+date: 2024-05-15
 inline: true
 related_posts: false
 ---
 
-Our paper on concept level spurious correlations for text classification is [online](https://arxiv.org/abs/2311.08648).
+Our [paper](https://arxiv.org/abs/2311.08648) on concept level spurious correlations for text classification, with [Yuhang Zhou](https://tonyzhou98.github.io/), is accepted to ACL 2024.
