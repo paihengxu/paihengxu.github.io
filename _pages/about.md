@@ -17,9 +17,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a third-year CS Ph.D. student at the University of Maryland’s [Computational Linguistics and Information Processing (CLIP) lab](https://wiki.umiacs.umd.edu/clip/index.php/Main_Page), advised by [Wei Ai](https://aiwei.me/). 
-My research interests are Natural Language Processing and Computational Social Science. I am interested in understanding human communications in various contexts by developing NLP tools that are explainable, causal, and fair. 
-Currently, I am working on identifying equity-centered teaching practices in the classroom and effective messaging strategies for public health on social media.
+I am a fourth-year CS Ph.D. student at the University of Maryland’s [Computational Linguistics and Information Processing (CLIP) lab](https://wiki.umiacs.umd.edu/clip/index.php/Main_Page), advised by [Wei Ai](https://aiwei.me/). 
+My research interests are Natural Language Processing (NLP) and Computational Social Science, focusing on education and social media contexts. 
+I am interested in understanding human conversations and developing applications using machine learning and NLP models within these domains, with considerations of causality and fairness.
 At UMD, I also closely work with [Jing Liu](https://www.jingliu.info/), [Louiqa Raschid](https://users.umiacs.umd.edu/~louiqa/), [Vanessa Frias-Martinez](https://vanessafriasmartinez.umiacs.io/), and [Furong Huang](https://furong-huang.com/) 
 
 In the past, I have interned at Adobe Research. Previously, I graduated from Johns Hopkins University with M.S.E in Computer Science, where I worked with [Mark Dredze](https://www.cs.jhu.edu/~mdredze/) at [Center for Language and Speech Processing](https://www.clsp.jhu.edu/).
