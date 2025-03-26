@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2024-03-12
+date: 2025-03-12
 inline: true
 related_posts: false
 ---
 
-Our survey on Large Language Models and Causal Inference is [online](https://arxiv.org/abs/2403.09606) now. Feedback is welcomed.
+Our [survey](https://arxiv.org/abs/2403.09606) on Large Language Models and Causal Inference is accepted to the *Findings of NAACL 2025*.
