@@ -1,7 +1,16 @@
+@article{xu2025skill,
+  title={Skill discovery for software scripting automation via offline simulations with llms},
+  author={Xu, Paiheng and Wu, Gang and Chen, Xiang and Yu, Tong and Xiao, Chang and Dernoncourt, Franck and Zhou, Tianyi and Ai, Wei and Swaminathan, Viswanathan},
+  journal={arXiv preprint arXiv:2504.20406},
+  year={2025},
+  html={https://arxiv.org/abs/2504.20406},
+  abstract={Scripting interfaces enable users to automate tasks and customize software workflows, but creating scripts traditionally requires programming expertise and familiarity with specific APIs, posing barriers for many users. While Large Language Models (LLMs) can generate code from natural language queries, runtime code generation is severely limited due to unverified code, security risks, longer response times, and higher computational costs. To bridge the gap, we propose an offline simulation framework to curate a software-specific skillset, a collection of verified scripts, by exploiting LLMs and publicly available scripting guides. Our framework comprises two components: (1) task creation, using top-down functionality guidance and bottom-up API synergy exploration to generate helpful tasks; and (2) skill generation with trials, refining and validating scripts based on execution feedback. To efficiently navigate the extensive API landscape, we introduce a Graph Neural Network (GNN)-based link prediction model to capture API synergy, enabling the generation of skills involving underutilized APIs and expanding the skillset's diversity. Experiments with Adobe Illustrator demonstrate that our framework significantly improves automation success rates, reduces response time, and saves runtime token costs compared to traditional runtime code generation. This is the first attempt to use software scripting interfaces as a testbed for LLM-based systems, highlighting the advantages of leveraging execution feedback in a controlled environment and offering valuable insights into aligning AI capabilities with user needs in specialized software domains.}
+}
+
 @article{li2025large,
   title={Large Language Models Struggle to Describe the Haystack without Human Help: Human-in-the-loop Evaluation of LLMs},
   author={Li, Zongxia and Calvo-Bartolom{\'e}, Lorena and Hoyle, Alexander and Xu, Paiheng and Dima, Alden and Fung, Juan Francisco and Boyd-Graber, Jordan},
-  journal={arXiv preprint arXiv:2502.14748},
+  journal={ACL},
   year={2025},
   html={https://arxiv.org/abs/2502.14748},
   abstract={A common use of NLP is to facilitate the understanding of large document collections, with a shift from using traditional topic models to Large Language Models. Yet the effectiveness of using LLM for large corpus understanding in real-world applications remains under-explored. This study measures the knowledge users acquire with unsupervised, supervised LLM-based exploratory approaches or traditional topic models on two datasets. While LLM-based methods generate more human-readable topics and show higher average win probabilities than traditional models for data exploration, they produce overly generic topics for domain-specific datasets that do not easily allow users to learn much about the documents. Adding human supervision to the LLM generation process improves data exploration by mitigating hallucination and over-genericity but requires greater human effort. In contrast, traditional. models like Latent Dirichlet Allocation (LDA) remain effective for exploration but are less user-friendly. We show that LLMs struggle to describe the haystack of large corpora without human help, particularly domain-specific data, and face scaling and hallucination limitations due to context length constraints. Dataset available at https://huggingface.co/datasets/zli12321/Bills.},
@@ -46,7 +55,7 @@
   year={2025},
   month={Mar},
   journal={Findings of the Association for Computational Linguistics: NAACL 2025},
-  html={https://arxiv.org/abs/2403.09606},
+  html={https://aclanthology.org/2025.findings-naacl.427/},
   abstract={Causal inference has shown potential in enhancing the predictive accuracy, fairness, robustness, and explainability of Natural Language Processing (NLP) models by capturing causal relationships among variables. The emergence of generative Large Language Models (LLMs) has significantly impacted various NLP domains, particularly through their advanced reasoning capabilities. This survey focuses on evaluating and improving LLMs from a causal view in the following areas: understanding and improving the LLMs' reasoning capacity, addressing fairness and safety issues in LLMs, complementing LLMs with explanations, and handling multimodality. Meanwhile, LLMs' strong reasoning capacities can in turn contribute to the field of causal inference by aiding causal relationship discovery and causal effect estimations. This review explores the interplay between causal inference frameworks and LLMs from both perspectives, emphasizing their collective potential to further the development of more advanced and equitable artificial intelligence systems.}
 }
 
