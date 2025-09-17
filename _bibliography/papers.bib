@@ -1,3 +1,24 @@
+@article{zhou2025disco,
+  title={DISCO Balances the Scales: Adaptive Domain-and Difficulty-Aware Reinforcement Learning on Imbalanced Data},
+  author={Zhou, Yuhang and Zhu, Jing and Qian, Shengyi and Zhao, Zhuokai and Wang, Xiyao and Liu, Xiaoyu and Li, Ming and Xu, Paiheng and Ai, Wei and Huang, Furong},
+  journal={Findings of the Association for Computational Linguistics: EMNLP 2025},
+  html={https://arxiv.org/abs/2505.15074},
+  year={2025},
+  month={Nov},
+  abstract={Large Language Models (LLMs) are increasingly aligned with human preferences through Reinforcement Learning from Human Feedback (RLHF). Among RLHF methods, Group Relative Policy Optimization (GRPO) has gained attention for its simplicity and strong performance, notably eliminating the need for a learned value function. However, GRPO implicitly assumes a balanced domain distribution and uniform semantic alignment across groups - assumptions that rarely hold in real-world datasets. When applied to multi-domain, imbalanced data, GRPO disproportionately optimizes for dominant domains, neglecting underrepresented ones and resulting in poor generalization and fairness. We propose Domain-Informed Self-Consistency Policy Optimization (DISCO), a principled extension to GRPO that addresses inter-group imbalance with two key innovations. Domain-aware reward scaling counteracts frequency bias by reweighting optimization based on domain prevalence. Difficulty-aware reward scaling leverages prompt-level self-consistency to identify and prioritize uncertain prompts that offer greater learning value. Together, these strategies promote more equitable and effective policy learning across domains. Extensive experiments across multiple LLMs and skewed training distributions show that DISCO improves generalization, outperforms existing GRPO variants by 5% on Qwen3 models, and sets new state-of-the-art results on multi-domain alignment benchmarks.}
+}
+
+@inproceedings{li2025large,
+  title={Large Language Models Struggle to Describe the Haystack without Human Help: A Social Science-Inspired Evaluation of Topic Models},
+  author={Li, Zongxia and Calvo-Bartolom{\'e}, Lorena and Hoyle, Alexander Miserlis and Xu, Paiheng and Stephens, Daniel Kofi and Fung, Juan Francisco and Dima, Alden and Boyd-Graber, Jordan Lee},
+  booktitle={ACL},
+  pages={7583--7604},
+  year={2025},
+  month={July},
+  html={https://aclanthology.org/2025.acl-long.375/},
+  abstract={A common use of NLP is to facilitate the understanding of large document collections, with models based on Large Language Models (LLMs) replacing probabilistic topic models. Yet the effectiveness of LLM-based approaches in real-world applications remains under explored. This study measures the knowledge users acquire with topic models—including traditional, unsupervised and supervised LLM- based approaches—on two datasets. While LLM-based methods generate more human- readable topics and show higher average win probabilities than traditional models for data exploration, they produce overly generic topics for domain-specific datasets that do not easily allow users to learn much about the documents. Adding human supervision to LLM-based topic models improves data exploration by addressing hallucination and genericity but requires more human efforts. In contrast, traditional models like Latent Dirichlet Allocation (LDA) remain effective for exploration but are less user-friendly. This paper provides best practices—there is no one right model, the choice of models is situation-specific—and suggests potential improvements for scalable LLM-based topic models.}
+}
+
 @article{xu2025skill,
   title={Skill discovery for software scripting automation via offline simulations with llms},
   author={Xu, Paiheng and Wu, Gang and Chen, Xiang and Yu, Tong and Xiao, Chang and Dernoncourt, Franck and Zhou, Tianyi and Ai, Wei and Swaminathan, Viswanathan},
@@ -5,15 +26,6 @@
   year={2025},
   html={https://arxiv.org/abs/2504.20406},
   abstract={Scripting interfaces enable users to automate tasks and customize software workflows, but creating scripts traditionally requires programming expertise and familiarity with specific APIs, posing barriers for many users. While Large Language Models (LLMs) can generate code from natural language queries, runtime code generation is severely limited due to unverified code, security risks, longer response times, and higher computational costs. To bridge the gap, we propose an offline simulation framework to curate a software-specific skillset, a collection of verified scripts, by exploiting LLMs and publicly available scripting guides. Our framework comprises two components: (1) task creation, using top-down functionality guidance and bottom-up API synergy exploration to generate helpful tasks; and (2) skill generation with trials, refining and validating scripts based on execution feedback. To efficiently navigate the extensive API landscape, we introduce a Graph Neural Network (GNN)-based link prediction model to capture API synergy, enabling the generation of skills involving underutilized APIs and expanding the skillset's diversity. Experiments with Adobe Illustrator demonstrate that our framework significantly improves automation success rates, reduces response time, and saves runtime token costs compared to traditional runtime code generation. This is the first attempt to use software scripting interfaces as a testbed for LLM-based systems, highlighting the advantages of leveraging execution feedback in a controlled environment and offering valuable insights into aligning AI capabilities with user needs in specialized software domains.}
-}
-
-@article{li2025large,
-  title={Large Language Models Struggle to Describe the Haystack without Human Help: Human-in-the-loop Evaluation of LLMs},
-  author={Li, Zongxia and Calvo-Bartolom{\'e}, Lorena and Hoyle, Alexander and Xu, Paiheng and Dima, Alden and Fung, Juan Francisco and Boyd-Graber, Jordan},
-  journal={ACL},
-  year={2025},
-  html={https://arxiv.org/abs/2502.14748},
-  abstract={A common use of NLP is to facilitate the understanding of large document collections, with a shift from using traditional topic models to Large Language Models. Yet the effectiveness of using LLM for large corpus understanding in real-world applications remains under-explored. This study measures the knowledge users acquire with unsupervised, supervised LLM-based exploratory approaches or traditional topic models on two datasets. While LLM-based methods generate more human-readable topics and show higher average win probabilities than traditional models for data exploration, they produce overly generic topics for domain-specific datasets that do not easily allow users to learn much about the documents. Adding human supervision to the LLM generation process improves data exploration by mitigating hallucination and over-genericity but requires greater human effort. In contrast, traditional. models like Latent Dirichlet Allocation (LDA) remain effective for exploration but are less user-friendly. We show that LLMs struggle to describe the haystack of large corpora without human help, particularly domain-specific data, and face scaling and hallucination limitations due to context length constraints. Dataset available at https://huggingface.co/datasets/zli12321/Bills.},
 }
 
 @inproceedings{zhou-etal-2024-multi,
@@ -186,7 +198,8 @@
   author={Zhou, Yuhang and Xu, Paiheng and Wang, Xiyao and Lu, Xuan and Gao, Ge and Ai, Wei},
   journal={ICWSM},
   year={2025},
-  html={https://arxiv.org/abs/2402.01681},
+  month={June},
+  html={https://ojs.aaai.org/index.php/ICWSM/article/view/35935},
   abstract={Emojis, which encapsulate semantics beyond mere words or phrases, have become prevalent in social network communications. This has spurred increasing scholarly interest in exploring their attributes and functionalities. However, emoji-related research and application face two primary challenges. First, researchers typically rely on crowd-sourcing to annotate emojis in order to understand their sentiments, usage intentions, and semantic meanings. Second, subjective interpretations by users can often lead to misunderstandings of emojis and cause the communication barrier. Large Language Models (LLMs) have achieved significant success in various annotation tasks, with ChatGPT demonstrating expertise across multiple domains. In our study, we assess ChatGPT's effectiveness in handling previously annotated and downstream tasks. Our objective is to validate the hypothesis that ChatGPT can serve as a viable alternative to human annotators in emoji research and that its ability to explain emoji meanings can enhance clarity and transparency in online communications. Our findings indicate that ChatGPT has extensive knowledge of emojis. It is adept at elucidating the meaning of emojis across various application scenarios and demonstrates the potential to replace human annotators in a range of tasks.}
 }
 
