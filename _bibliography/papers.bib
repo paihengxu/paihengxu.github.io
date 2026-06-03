@@ -1,11 +1,64 @@
-@article{zhou2025disco,
-  title={DISCO Balances the Scales: Adaptive Domain-and Difficulty-Aware Reinforcement Learning on Imbalanced Data},
-  author={Zhou, Yuhang and Zhu, Jing and Qian, Shengyi and Zhao, Zhuokai and Wang, Xiyao and Liu, Xiaoyu and Li, Ming and Xu, Paiheng and Ai, Wei and Huang, Furong},
-  journal={Findings of the Association for Computational Linguistics: EMNLP},
-  html={https://arxiv.org/abs/2505.15074},
-  year={2025},
-  month={Nov},
-  abstract={Large Language Models (LLMs) are increasingly aligned with human preferences through Reinforcement Learning from Human Feedback (RLHF). Among RLHF methods, Group Relative Policy Optimization (GRPO) has gained attention for its simplicity and strong performance, notably eliminating the need for a learned value function. However, GRPO implicitly assumes a balanced domain distribution and uniform semantic alignment across groups - assumptions that rarely hold in real-world datasets. When applied to multi-domain, imbalanced data, GRPO disproportionately optimizes for dominant domains, neglecting underrepresented ones and resulting in poor generalization and fairness. We propose Domain-Informed Self-Consistency Policy Optimization (DISCO), a principled extension to GRPO that addresses inter-group imbalance with two key innovations. Domain-aware reward scaling counteracts frequency bias by reweighting optimization based on domain prevalence. Difficulty-aware reward scaling leverages prompt-level self-consistency to identify and prioritize uncertain prompts that offer greater learning value. Together, these strategies promote more equitable and effective policy learning across domains. Extensive experiments across multiple LLMs and skewed training distributions show that DISCO improves generalization, outperforms existing GRPO variants by 5% on Qwen3 models, and sets new state-of-the-art results on multi-domain alignment benchmarks.}
+@article{balepur2026scoreboard,
+    title={Check The Scoreboard: An Analysis of Scoring Schemes on Multiple-Choice Evaluation},
+    author={Balepur, Nishant and Xu, Paiheng and Ai, Wei and Choi, Eunsol and Rudinger, Rachel and Boyd-Graber, Jordan},
+    year={2026},
+    journal={Under review},
+    code={https://github.com/nbalepur/mcqa-scoring},
+    html={https://drive.google.com/file/d/1nQcxTckOVxaG446MNJRqvl8AaJYBXQ_e/view},
+    abstract={NLP benchmarks multiple-choice question answering (MCQA) via number-right scoring (i.e.,accuracy), but in educational testing, the scoring scheme is a key design choice that dictates which abilities to reward. We examine how alternatives to number right change what MCQA measures with six education-inspired schemes that assess abilities beyond accuracy: distractor elimination, abstention, confidence calibration, and self-correction. On LLM benchmarks, the schemes: 1) shift LLM rankings beyond prompt sensitivity under number right scoring; 2) better predict the LLMs users prefer in LLM Arena; and 3) reveal unique model behaviors, like that GPT-5 rarely abstains and readily self-corrects, while weaker open-weight models often abstain and hesitate to eliminate choices. Given the benefits of alternative scoring schemes, we discuss ways to blueprint them in tasks beyond MCQA.}
+  }
+
+@article{xu2026conditional,
+  title={Conditional Hypothesis Generation for LLM-Based Text Analysis with Researcher-Specified Covariates},
+  author={Xu, Paiheng and Liu, Jing and Ai, Wei},
+  journal={arXiv:2606.03029},
+  year={2026},
+  doi={10.48550/arXiv.2606.03029},
+  html={https://arxiv.org/abs/2606.03029},
+  selected=true,
+  abstract={A core goal of computational social science is to discover interpretable differences in how language varies across outcomes of interest, such as political affiliation or instructional quality. Recent LLM-based hypothesis generation methods describe such differences in natural language, but select for globally discriminative patterns without accounting for covariates that shape the data based on researchers’ domain knowledge. When covariates are ignored, selected patterns can reflect confounds rather than differences of substantive interest. We introduce conditional hypothesis generation, a framework that incorporates researcher-specified covariates to steer hypothesis discovery toward differences that hold within relevant subgroups. Two challenges arise: the target subgroup may be underrepresented (stratum imbalance), and the direction of a difference may reverse across subgroups (sign reversal). We propose two econometrics-inspired methods: one introduces feature–covariate interactions to detect sign reversals, and the other applies within-stratum demeaning and inverse-frequency reweighting to equalize underrepresented strata. Synthetic experiments show each method outperforms global baselines in its targeted setting, and expert evaluation on two real-world datasets confirms that covariate-aware generation surfaces more useful hypotheses within relevant subgroups.}
+}
+
+@inproceedings{xu2026does,
+  title={Does Geo-co-location Matter? A Case Study of Public Health Conversations during COVID-19},
+  author={Xu, Paiheng and Raschid, Louiqa and Frias-Martinez, Vanessa},
+  booktitle={ICWSM},
+  volume={20},
+  number={1},
+  pages={2518--2537},
+  year={2026},
+  month={may},
+  selected=true,
+  html={https://ojs.aaai.org/index.php/ICWSM/article/view/42764},
+  abstract={Social media platforms like Twitter (now X) have been pivotal in information dissemination and public engagement, especially during COVID-19. A key goal for public health experts was to encourage prosocial behavior that could impact local outcomes such as masking and social distancing. Given the importance of local news and guidance during COVID-19, the objective of our research is to analyze the effect of localized engagement, on social media conversations. This study examines the impact of geographic co-location, as a proxy for localized engagement between public health experts (PHEs) and the public, on social media. We analyze a Twitter conversation dataset from January 2020 to November 2021, comprising over 19 K tweets from nearly five hundred PHEs, along with approximately 800 K replies from 350 K participants. Our findings reveal that geo-co-location is associated with higher engagement rates, especially in conversations on topics including masking, lockdowns, and education, and in conversations with academic and medical professionals. Lexical features associated with emotion and personal experiences were more common in geo-co-located contexts. This research provides insights into how geographic co-location influences social media engagement and can inform strategies to improve public health messaging.}
+}
+
+@inproceedings{zhou-etal-2025-disco,
+    title = "{DISCO} Balances the Scales: Adaptive Domain- and Difficulty-Aware Reinforcement Learning on Imbalanced Data",
+    author = "Zhou, Yuhang  and
+      Zhu, Jing  and
+      Qian, Shengyi  and
+      Zhao, Zhuokai  and
+      Wang, Xiyao  and
+      Liu, Xiaoyu  and
+      Li, Ming  and
+      Xu, Paiheng  and
+      Ai, Wei  and
+      Huang, Furong",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    html = "https://aclanthology.org/2025.findings-emnlp.74/",
+    doi = "10.18653/v1/2025.findings-emnlp.74",
+    pages = "1407--1419",
+    ISBN = "979-8-89176-335-7",
+    abstract = "Large Language Models (LLMs) are increasingly aligned with human preferences through Reinforcement Learning from Human Feedback (RLHF). Among RLHF methods, Group Relative Policy Optimization (GRPO) has gained attention for its simplicity and strong performance, notably eliminating the need for a learned value function. However, GRPO implicitly assumes a balanced domain distribution and uniform semantic alignment across groups{---}assumptions that rarely hold in real-world datasets. When applied to multi-domain, imbalanced data, GRPO disproportionately optimizes for dominant domains, neglecting underrepresented ones and resulting in poor generalization and fairness. We propose Domain-Informed Self-Consistency Policy Optimization (DISCO), a principled extension to GRPO that addresses inter-group imbalance with two key innovations. Domain-aware reward scaling counteracts frequency bias by reweighting optimization based on domain prevalence. Difficulty-aware reward scaling leverages prompt-level self-consistency to identify and prioritize uncertain prompts that offer greater learning value. Together, these strategies promote more equitable and effective policy learning across domains. Extensive experiments across multiple LLMs and skewed training distributions show that DISCO improves generalization, outperforms existing GRPO variants by 5{\%} on Qwen3 models, and sets new state-of-the-art results on multi-domain alignment benchmarks."
 }
 
 @inproceedings{li2025large,
@@ -19,13 +72,30 @@
   abstract={A common use of NLP is to facilitate the understanding of large document collections, with models based on Large Language Models (LLMs) replacing probabilistic topic models. Yet the effectiveness of LLM-based approaches in real-world applications remains under explored. This study measures the knowledge users acquire with topic models—including traditional, unsupervised and supervised LLM- based approaches—on two datasets. While LLM-based methods generate more human- readable topics and show higher average win probabilities than traditional models for data exploration, they produce overly generic topics for domain-specific datasets that do not easily allow users to learn much about the documents. Adding human supervision to LLM-based topic models improves data exploration by addressing hallucination and genericity but requires more human efforts. In contrast, traditional models like Latent Dirichlet Allocation (LDA) remain effective for exploration but are less user-friendly. This paper provides best practices—there is no one right model, the choice of models is situation-specific—and suggests potential improvements for scalable LLM-based topic models.}
 }
 
-@article{xu2025skill,
-  title={Skill discovery for software scripting automation via offline simulations with llms},
-  author={Xu, Paiheng and Wu, Gang and Chen, Xiang and Yu, Tong and Xiao, Chang and Dernoncourt, Franck and Zhou, Tianyi and Ai, Wei and Swaminathan, Viswanathan},
-  journal={Findings of the Association for Computational Linguistics: EACL},
-  year={2026},
-  html={https://arxiv.org/abs/2504.20406},
-  abstract={Scripting interfaces enable users to automate tasks and customize software workflows, but creating scripts traditionally requires programming expertise and familiarity with specific APIs, posing barriers for many users. While Large Language Models (LLMs) can generate code from natural language queries, runtime code generation is severely limited due to unverified code, security risks, longer response times, and higher computational costs. To bridge the gap, we propose an offline simulation framework to curate a software-specific skillset, a collection of verified scripts, by exploiting LLMs and publicly available scripting guides. Our framework comprises two components: (1) task creation, using top-down functionality guidance and bottom-up API synergy exploration to generate helpful tasks; and (2) skill generation with trials, refining and validating scripts based on execution feedback. To efficiently navigate the extensive API landscape, we introduce a Graph Neural Network (GNN)-based link prediction model to capture API synergy, enabling the generation of skills involving underutilized APIs and expanding the skillset's diversity. Experiments with Adobe Illustrator demonstrate that our framework significantly improves automation success rates, reduces response time, and saves runtime token costs compared to traditional runtime code generation. This is the first attempt to use software scripting interfaces as a testbed for LLM-based systems, highlighting the advantages of leveraging execution feedback in a controlled environment and offering valuable insights into aligning AI capabilities with user needs in specialized software domains.}
+@inproceedings{xu-etal-2026-skill,
+    title = "Skill Discovery for Software Scripting Automation via Offline Simulations with {LLM}s",
+    author = "Xu, Paiheng  and
+      Wu, Gang  and
+      Chen, Xiang  and
+      Yu, Tong  and
+      Xiao, Chang  and
+      Dernoncourt, Franck  and
+      Zhou, Tianyi  and
+      Ai, Wei  and
+      Swaminathan, Viswanathan",
+    editor = "Demberg, Vera  and
+      Inui, Kentaro  and
+      Marquez, Llu{\'i}s",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {EACL} 2026",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    html = "https://aclanthology.org/2026.findings-eacl.37/",
+    doi = "10.18653/v1/2026.findings-eacl.37",
+    pages = "743--759",
+    ISBN = "979-8-89176-386-9",
+    abstract = "Scripting interfaces enable users to automate tasks and customize software workflows, but creating scripts traditionally requires programming expertise and familiarity with specific APIs, posing barriers for many users. While Large Language Models (LLMs) can generate code from natural language queries, runtime code generation is severely limited due to unverified code, security risks, longer response times, and higher computational costs. To bridge the gap, we propose an offline simulation framework to curate a software-specific skillset{---}a collection of verified scripts{---}by exploiting LLMs and publicly available scripting guides. Our framework comprises two components: (1) task creation, using top-down functionality guidance and bottom-up API synergy exploration to generate helpful tasks; and (2) skill generation with trials, refining and validating scripts based on execution feedback. To efficiently navigate the extensive API landscape, we introduce a Graph Neural Network (GNN)-based link prediction model to capture API synergy, enabling the generation of skills involving underutilized APIs and expanding the skillset{'}s diversity. Experiments with Adobe Illustrator demonstrate that our framework significantly improves automation success rates, reduces response time, and saves runtime token costs compared to traditional runtime code generation. This is the first attempt to use software scripting interfaces as a testbed for LLM-based systems, highlighting the advantages of leveraging execution feedback in a controlled environment and offering valuable insights into aligning AI capabilities with user needs in specialized software domains."
 }
 
 @inproceedings{zhou-etal-2024-multi,
@@ -50,16 +120,6 @@
     doi = "10.18653/v1/2024.findings-emnlp.190",
     pages = "3315--3333",
     abstract = "Large language models (LLMs) have significantly advanced various natural language processing tasks, but deploying them remains computationally expensive. Knowledge distillation (KD) is a promising solution, enabling the transfer of capabilities from larger teacher LLMs to more compact student models. Particularly, sequence-level KD, which distills rationale-based reasoning processes instead of merely final outcomes, shows great potential in enhancing students' reasoning capabilities. However, current methods struggle with sequence-level KD under long-tailed data distributions, adversely affecting generalization on sparsely represented domains. We introduce the Multi-Stage Balanced Distillation (BalDistill) framework, which iteratively balances training data within a fixed computational budget. By dynamically selecting representative head domain examples and synthesizing tail domain examples, BalDistill achieves state-of-the-art performance across diverse long-tailed datasets, enhancing both the efficiency and efficacy of the distilled models."
-}
-
-@article{xu2024does,
-  title={Does Geo-co-location Matter? A Case Study of Public Health Conversations during COVID-19},
-  author={Xu, Paiheng and Raschid, Louiqa and Frias-Martinez, Vanessa},
-  journal={To appear in ICWSM},
-  year={2026},
-  selected=true,
-  html={https://arxiv.org/abs/2405.17710},
-  abstract={Social media platforms like Twitter (now X) have been pivotal in information dissemination and public engagement, especially during COVID-19. A key goal for public health experts was to encourage prosocial behavior that could impact local outcomes such as masking and social distancing. Given the importance of local news and guidance during COVID-19, the objective of our research is to analyze the effect of localized engagement, on social media conversations. This study examines the impact of geographic co-location, as a proxy for localized engagement between public health experts (PHEs) and the public, on social media. We analyze a Twitter conversation dataset from January 2020 to November 2021, comprising over 19 K tweets from nearly five hundred PHEs, along with approximately 800 K replies from 350 K participants. Our findings reveal that geo-co-location is associated with higher engagement rates, especially in conversations on topics including masking, lockdowns, and education, and in conversations with academic and medical professionals. Lexical features associated with emotion and personal experiences were more common in geo-co-located contexts. This research provides insights into how geographic co-location influences social media engagement and can inform strategies to improve public health messaging.}
 }
 
 @article{liu2024large,
