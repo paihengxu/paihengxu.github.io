@@ -755,7 +755,8 @@ footer.sticky-bottom {
       }
 
       .links {
-        a.btn {
+        a.btn,
+        button.media-coverage {
           color: var(--global-text-color);
           border: 1px solid var(--global-text-color);
           padding-left: 1rem;
@@ -818,11 +819,13 @@ footer.sticky-bottom {
         transition: all 0.15s ease;
       }
 
-      div.abstract.hidden {
+      div.abstract.hidden,
+      div.media-coverage.hidden {
         border: dashed 1px var(--global-bg-color);
       }
 
-      div.abstract.hidden.open {
+      div.abstract.hidden.open,
+      div.media-coverage.hidden.open {
         border-color: var(--global-text-color);
       }
     }

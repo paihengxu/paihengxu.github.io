@@ -1,12 +1,26 @@
 $(document).ready(function () {
-  // add toggle functionality to abstract and bibtex buttons
+  // Add toggle functionality to publication details, scoped to each paper.
+  function closeMediaCoverage(entry) {
+    entry.find("div.media-coverage").removeClass("open").prop("hidden", true);
+    entry.find("button.media-coverage").attr("aria-expanded", "false");
+  }
   $("a.abstract").click(function () {
+    closeMediaCoverage($(this).parent().parent());
     $(this).parent().parent().find(".abstract.hidden").toggleClass("open");
     $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
   });
   $("a.bibtex").click(function () {
+    closeMediaCoverage($(this).parent().parent());
     $(this).parent().parent().find(".bibtex.hidden").toggleClass("open");
     $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
+  });
+  $("button.media-coverage").click(function () {
+    const entry = $(this).parent().parent();
+    const panel = entry.find("div.media-coverage");
+    const open = $(this).attr("aria-expanded") !== "true";
+    entry.find(".abstract.hidden, .bibtex.hidden").removeClass("open");
+    panel.prop("hidden", !open).toggleClass("open", open);
+    $(this).attr("aria-expanded", String(open));
   });
   $("a").removeClass("waves-effect waves-light");
 
